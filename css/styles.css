@@ -1,3 +1,129 @@
 body {
-  
+  align-items: center;
+  color: hsla(0, 0%, 100%, 0.75);
+  display: flex;
+  font-family: 'Lexend Deca', sans-serif;
+  height: 100vh;
+  justify-content: center;
+  margin: 1rem;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display';
+  font-size: 2.2rem;
+  margin: 2rem 0 1.8rem 0;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.card-container {
+  border-radius: 1rem;
+  display: flex;
+  height: 500px;
+  width: 920px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 2.8rem;
+}
+
+.sedan-column {
+  background: hsl(31, 77%, 52%);
+  border-radius: 0.7rem 0 0 0.7rem;
+}
+
+.suv-column {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury-column {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 0.7rem 0.7rem 0;
+}
+
+.description {
+  line-height: 1.7;
+  font-size: 0.9375rem;
+  margin: 0 auto 1.5rem auto ;
+}
+
+.learn-button {
+  background: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 3rem;
+  cursor: pointer;
+  font-family: 'Lexend Deca', sans-serif;
+  margin-top: auto;
+  height: 3rem;
+  width: 9rem;
+}
+
+.sedan-column button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv-column button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-column button {
+  color: hsl(179, 100%, 13%);
+}
+
+/* start hover properties */
+.sedan-column button:hover {
+  background: none;
+  color: hsl(0, 0%, 95%);
+}
+
+.suv-column button:hover {
+  background: none;
+  color: hsl(0, 0%, 95%);
+}
+
+.luxury-column button:hover {
+  background: none;
+  color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 750px) {
+  body {
+    height: 100vh;
+    margin: 20px;
+  }
+  .card-container {
+    flex-direction: column;
+    width: 325px;
+  }
+  .sedan-column {
+    border-radius: 0.7rem 0.7rem 0 0;
+  }
+  .luxury-column {
+    border-radius: 0 0 0.7rem 0.7rem;
+  }
+
+}
+
+
+
+
+.attribution {
+  bottom: 1rem;
+  display: none;
+  color: grey;
+  left: 20%;
+  right: 20%;
+  font-size: 11px;
+  position: absolute;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
