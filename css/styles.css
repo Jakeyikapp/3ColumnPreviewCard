@@ -10,7 +10,7 @@ body {
 
 h1 {
   color: hsl(0, 0%, 95%);
-  font-family: 'Big Shoulders Display';
+  font-family: 'Big Shoulders Display', sans-serif;
   font-size: 2.2rem;
   margin: 2rem 0 1.8rem 0;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ h1 {
 .description {
   line-height: 1.7;
   font-size: 0.9375rem;
-  margin: 0 auto 1.5rem auto ;
+  margin: 0 auto 1.5rem auto;
 }
 
 .learn-button {
@@ -93,30 +93,6 @@ h1 {
   color: hsl(0, 0%, 95%);
 }
 
-@media (max-width: 750px) {
-
-  body {
-    height: 100%;
-  }
-
-  .card-container {
-    flex-direction: column;
-    height: auto;
-    min-width: ;
-    width: 325px;
-  }
-  .sedan-column {
-    border-radius: 0.7rem 0.7rem 0 0;
-  }
-  .luxury-column {
-    border-radius: 0 0 0.7rem 0.7rem;
-  }
-
-}
-
-
-
-
 .attribution {
   bottom: 1rem;
   display: none;
@@ -131,3 +107,29 @@ h1 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (max-height: 600px) {
+  body {
+    height: 100%;
+  }
+
+ @media (max-width: 750px) {
+    body {
+      height: 100%;
+    }
+
+    .card-container {
+      flex-direction: column;
+      height: auto;
+      min-width: ;
+      width: 325px;
+    }
+
+    .sedan-column {
+      border-radius: 0.7rem 0.7rem 0 0;
+    }
+
+    .luxury-column {
+      border-radius: 0 0 0.7rem 0.7rem;
+    }
+  }
