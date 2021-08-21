@@ -1,15 +1,14 @@
-html {
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
+html, body{
   align-items: center;
-}
-
-body {
-  align-items: center;
+  background: hsl(0, 0%, 95%);
   color: hsla(0, 0%, 100%, 0.75);
+  display: flex;
+  flex-direction: column;
   font-family: 'Lexend Deca', sans-serif;
+  justify-content: center;
   margin: 0;
+  min-height: 100%;
+
 }
 
 h1 {
@@ -24,7 +23,7 @@ h1 {
   border-radius: 1rem;
   display: flex;
   height: 500px;
-  margin: 1rem;
+  margin: 2rem;
   max-width: 920px;
 }
 
@@ -63,6 +62,7 @@ h1 {
   margin-top: auto;
   height: 3rem;
   width: 9rem;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .sedan-column button {
@@ -94,27 +94,16 @@ h1 {
 }
 
 .attribution {
-  bottom: 1rem;
-  display: none;
   color: grey;
-  left: 20%;
-  right: 20%;
   font-size: 11px;
-  position: absolute;
-  text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
 
-
-
  @media (max-width: 750px) {
-    body {
-      height: 100%;
-    }
-
     .card-container {
       flex-direction: column;
       height: auto;
@@ -129,9 +118,7 @@ h1 {
     .luxury-column {
       border-radius: 0 0 0.7rem 0.7rem;
     }
-  }
-
-  @media (max-height: 600px) {
-    body {
-      height: 100%;
+    .attribution {
+      margin-bottom: 1rem;
     }
+  }

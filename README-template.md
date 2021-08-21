@@ -61,8 +61,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-I learned that setting margin-top: auto of an element in a flex container of a determined height will set it to the bottom. My mind was blown. Also I learned you can set html min-height: 100vh and it prevents part of your element from being chopped off <--this was incredibly helpful!
-
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
